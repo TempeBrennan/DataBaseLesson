@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace AddressBook
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -53,11 +53,19 @@ namespace AddressBook
                     //var name = dr["UserName"].ToString();
                     if (result)
                     {
-                        MessageBox.Show("登陆成功！");
+                        //MessageBox.Show("登陆成功！");
+                        this.Hide();
+                        var mainForm = new MainForm(new ViewModels.UserInfo()
+                        {
+                            UserName = this.txtUserName.Text.Trim(),
+                            Password = this.txtUserPassword.Text.Trim()
+                        });
+                        mainForm.Show();
                     }
                     else
                     {
                         MessageBox.Show("登陆失败！");
+                        this.txtUserName.Focus();
                     }
                 }
                 catch (Exception ex)

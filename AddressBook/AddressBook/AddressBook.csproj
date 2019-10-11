@@ -47,17 +47,81 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBHelper.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Models\DBHelper.cs" />
+    <Compile Include="ViewModels\DataStructure.cs" />
+    <Compile Include="Views\Menu\Help\FormAbout.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Views\Menu\Help\FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Menu\Contact\FormContactAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Menu\Contact\FormContactAdd.Designer.cs">
+      <DependentUpon>FormContactAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Menu\Contact\FormContactDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Menu\Contact\FormContactDetail.Designer.cs">
+      <DependentUpon>FormContactDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Menu\Contact\FormContactList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Menu\Contact\FormContactList.Designer.cs">
+      <DependentUpon>FormContactList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Menu\Manage\FormDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Menu\Manage\FormDB.Designer.cs">
+      <DependentUpon>FormDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Menu\Group\FormGroupAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Menu\Group\FormGroupAdd.Designer.cs">
+      <DependentUpon>FormGroupAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Menu\Group\FormGroupDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Menu\Group\FormGroupDetail.Designer.cs">
+      <DependentUpon>FormGroupDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Menu\Group\FormGroupList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Menu\Group\FormGroupList.Designer.cs">
+      <DependentUpon>FormGroupList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Menu\Help\FormPwdChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Menu\Help\FormPwdChange.Designer.cs">
+      <DependentUpon>FormPwdChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
