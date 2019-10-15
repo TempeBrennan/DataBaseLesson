@@ -98,6 +98,7 @@
             this.dgvContactList.RowTemplate.Height = 23;
             this.dgvContactList.Size = new System.Drawing.Size(836, 325);
             this.dgvContactList.TabIndex = 4;
+            this.dgvContactList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvContactList_CellDoubleClick);
             // 
             // Column1
             // 
@@ -148,6 +149,7 @@
             this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "增加";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
@@ -157,6 +159,7 @@
             this.btnDelete.TabIndex = 6;
             this.btnDelete.Text = "删除";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnModify
             // 
@@ -166,6 +169,7 @@
             this.btnModify.TabIndex = 7;
             this.btnModify.Text = "修改";
             this.btnModify.UseVisualStyleBackColor = true;
+            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
             // btnClose
             // 
@@ -175,6 +179,7 @@
             this.btnClose.TabIndex = 8;
             this.btnClose.Text = "关闭";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // FormContactList
             // 
