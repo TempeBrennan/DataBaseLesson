@@ -21,7 +21,7 @@ namespace AddressBook.ViewModels
 
         public static bool CheckEmail(string email)
         {
-            if (!Regex.IsMatch(email, @"\w+([.-+]\w+)*@\w+([-.]\w+)*\.\w+[-.]\w+)*"))
+            if (!Regex.IsMatch(email, @"\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"))
             {
                 return false;
             }
