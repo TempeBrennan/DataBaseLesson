@@ -47,8 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\DBHelper.cs" />
-    <Compile Include="ViewModels\DataStructure.cs" />
+    <Compile Include="ViewModels\DBHelper.cs" />
+    <Compile Include="Models\DataStructure.cs" />
+    <Compile Include="ViewModels\Utility.cs" />
     <Compile Include="Views\Menu\Help\FormAbout.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +133,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\Menu\Contact\FormContactAdd.resx">
+      <DependentUpon>FormContactAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Menu\Contact\FormContactDetail.resx">
+      <DependentUpon>FormContactDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Menu\Contact\FormContactList.resx">
+      <DependentUpon>FormContactList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Menu\Group\FormGroupAdd.resx">
       <DependentUpon>FormGroupAdd.cs</DependentUpon>
     </EmbeddedResource>
