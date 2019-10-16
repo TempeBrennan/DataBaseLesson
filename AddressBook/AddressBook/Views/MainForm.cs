@@ -72,7 +72,7 @@ namespace AddressBook
 
         private void tsmiPwd_Click(object sender, EventArgs e)
         {
-            var form = new FormPwdChange();
+            var form = new FormPwdChange(this._userInfo);
             form.ShowDialog();
         }
 

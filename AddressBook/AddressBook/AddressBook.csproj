@@ -151,6 +151,9 @@
     <EmbeddedResource Include="Views\Menu\Group\FormGroupList.resx">
       <DependentUpon>FormGroupList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Menu\Help\FormPwdChange.resx">
+      <DependentUpon>FormPwdChange.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
