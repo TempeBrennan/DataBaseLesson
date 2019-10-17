@@ -1,4 +1,5 @@
 ﻿using AddressBook.ViewModels;
+using AddressBook.Views.Menu.Help;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

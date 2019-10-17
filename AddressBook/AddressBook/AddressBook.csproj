@@ -50,12 +50,6 @@
     <Compile Include="ViewModels\DBHelper.cs" />
     <Compile Include="Models\DataStructure.cs" />
     <Compile Include="ViewModels\Utility.cs" />
-    <Compile Include="Views\Menu\Help\FormAbout.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\Menu\Help\FormAbout.Designer.cs">
-      <DependentUpon>FormAbout.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\Menu\Contact\FormContactAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +67,12 @@
     </Compile>
     <Compile Include="Views\Menu\Contact\FormContactList.Designer.cs">
       <DependentUpon>FormContactList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Menu\Help\FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Menu\Help\FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Menu\Manage\FormDB.cs">
       <SubType>Form</SubType>
@@ -150,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Menu\Group\FormGroupList.resx">
       <DependentUpon>FormGroupList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Menu\Help\FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Menu\Help\FormPwdChange.resx">
       <DependentUpon>FormPwdChange.cs</DependentUpon>
